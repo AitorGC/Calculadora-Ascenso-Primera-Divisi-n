@@ -90,6 +90,8 @@ export default function App() {
     { id: 'andorra', name: 'FC Andorra', shortName: 'AND', points: 10, gf: 0, gc: 0, dg: 0, color: '#a1a1aa', isExternal: true, juegoLimpio: 79 },
   ]);
 
+  const [toast, setToast] = useState<{ message: string; show: boolean } | null>(null);
+
   // Enfrentamientos directos (H2H) iniciales
   const [h2h, setH2H] = useState<H2HMatch[]>([
     // 1. Almería as Local
@@ -670,6 +672,8 @@ export default function App() {
       }
       return f;
     }));
+    setToast({ message: "Simulación actualizada", show: true });
+    setTimeout(() => setToast(null), 3000);
   };
 
   const handleUpdateH2H = (h2hId: string, side: 'goalsA' | 'goalsB', val: number) => {
@@ -1631,6 +1635,20 @@ export default function App() {
         )}
 
       </main>
+
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            className="fixed bottom-4 right-4 bg-laspalmas-blue text-white px-6 py-3 rounded-lg shadow-lg z-50 flex items-center gap-2"
+          >
+            <Check className="w-5 h-5 text-laspalmas-yellow" />
+            {toast.message}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* -------------------------------------------------------------------------
           FOOTER AREA

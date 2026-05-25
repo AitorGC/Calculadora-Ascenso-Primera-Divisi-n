@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Calculadora de Ascenso UD Las Palmas
 
-# Run and deploy your AI Studio app
+Herramienta profesional diseñada para calcular y visualizar las posibilidades de ascenso de la UD Las Palmas. Esta calculadora permite simular diferentes escenarios de partidos restantes para obtener proyecciones precisas basadas en los resultados marcados.
 
-This contains everything you need to run your app locally.
+## Características
 
-View your app in AI Studio: https://ai.studio/apps/225c9062-d6c0-4f90-a416-cdfa6e591a6f
+- **Simulador de Escenarios:** Calcula probabilidades de ascenso basadas en distintos resultados de partidos.
+- **Modo Interactivo:** Fija resultados específicos para analizar cómo afectan directamente a la tabla clasificatoria.
+- **Interfaz Profesional:** Diseño limpio, minimalista y totalmente responsivo construido con React y Tailwind CSS.
 
-## Run Locally
+## Tecnologías Utilizadas
 
-**Prerequisites:**  Node.js
+- **Frontend:** React 18, Vite.
+- **Estilos:** Tailwind CSS.
+- **Animaciones:** Motion.
 
+## Desarrollo
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Desarrollado por Aitor Santana.
+
+---
+
+Este proyecto está bajo desarrollo continuo para asegurar la mejor experiencia de usuario y precisión en los datos.
