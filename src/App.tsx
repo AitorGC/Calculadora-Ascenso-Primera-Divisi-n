@@ -884,36 +884,33 @@ export default function App() {
           HEADER & HERO BAR (Clean Minimalism Aesthetics)
           ------------------------------------------------------------------------- */}
       <header className="border-b border-slate-200 bg-white sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-laspalmas-blue rounded-lg flex items-center justify-center text-white shrink-0 font-bold shadow-sm">
               <Trophy className="w-5 h-5 text-laspalmas-yellow shrink-0 animate-pulse" />
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-laspalmas-blue/10 text-laspalmas-blue px-2 py-0.5 rounded-full border border-laspalmas-blue/20">
-                  Desarrollado por Aitor Santana
-                </span>
-                <span className="text-xs font-mono text-slate-400">v1.3.0</span>
-              </div>
+            <div className="flex-1">
               <h1 id="app-title" className="text-base sm:text-lg font-black text-slate-900 tracking-tight uppercase flex items-center gap-2 flex-wrap mt-0.5">
                 Calculadora de Ascenso <span className="text-laspalmas-blue bg-laspalmas-yellow border border-laspalmas-yellow/50 px-2 py-0.5 rounded-lg shadow-inner text-xs font-black tracking-normal self-center">UD Las Palmas</span> 💛💙
               </h1>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 self-end md:self-auto font-sans">
-            <button
-               onClick={resetAll}
-              className="flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 active:bg-slate-100 rounded-lg text-xs font-semibold text-slate-750 border border-slate-200 shadow-xs transition cursor-pointer"
-              id="btn-reset-data"
-            >
-              <RefreshCw className="w-3.5 h-3.5 text-laspalmas-blue" />
-              Restablecer Valores
-            </button>
-            <div className="text-xs bg-laspalmas-yellow/15 border border-laspalmas-yellow/40 px-3 py-2 rounded-lg text-slate-800 font-medium">
-              Escenarios calculados:{' '}
-              <strong className="text-laspalmas-blue font-mono text-sm">{simulationData.totalScenarios.toLocaleString()}</strong>
+          <div className="flex items-center gap-4">
+
+            <div className="hidden md:flex items-center gap-3 font-sans">
+              <button
+                onClick={resetAll}
+                className="flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 active:bg-slate-100 rounded-lg text-xs font-semibold text-slate-750 border border-slate-200 shadow-xs transition cursor-pointer"
+                id="btn-reset-data"
+              >
+                <RefreshCw className="w-3.5 h-3.5 text-laspalmas-blue" />
+                Restablecer Valores
+              </button>
+              <div className="text-xs bg-laspalmas-yellow/15 border border-laspalmas-yellow/40 px-3 py-2 rounded-lg text-slate-800 font-medium">
+                Escenarios calculados:{' '}
+                <strong className="text-laspalmas-blue font-mono text-sm">{simulationData.totalScenarios.toLocaleString()}</strong>
+              </div>
             </div>
           </div>
         </div>
