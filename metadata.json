@@ -1,0 +1,6 @@
+{
+  "name": "Simulador de Ascenso - Segunda División",
+  "description": "Calculadora interactiva y simulador de probabilidades de ascenso para la Segunda División española (LaLiga Hypermotion) aplicando criterios de desempate RFEF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

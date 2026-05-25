@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-laspalmas-yellow: #ffd200;
+  --color-laspalmas-blue: #003CA5;
+  --color-laspalmas-navy: #000F6E;
+  --color-laspalmas-amber: #FFCC00;
+  
+  --color-brand-yellow: #ffd200;
+  --color-brand-blue: #003CA5;
+}
